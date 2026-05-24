@@ -1,0 +1,114 @@
+version: '3.8'
+
+services:
+  client_mobile:
+    build: ./mobile_client
+    container_name: app_client_mobile
+    volumes:
+      - ./mobile_client:/usr/src/app
+      - common_volume:/usr/src/app/common_volume
+    depends_on:
+      - server
+
+  server:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    container_name: app_server
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./server:/usr/src/app
+      - ./uploads:/usr/src/app/uploads
+    depends_on:
+      - mongodb
+    environment:
+      - GOOGLE_CLIENT_ID=477262949060-994lha13s22nhk3r3etu10s4b65mv50i.apps.googleusercontent.com
+      - GOOGLE_CLIENT_SECRET=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
+      - GOOGLE_AUTH_REDIRECT_URI=http://localhost:8080/auth/callback
+      - GITHUB_CLIENT_ID=Ov23liSRtdTZubZbydum
+      - GITHUB_CLIENT_SECRET=ef9733f2d5065b40dd7a583b524e9191ed4a2335
+      - GITHUB_AUTH_REDIRECT_URI=http://localhost:8080/auth/callback
+      - MICROSOFT_CLIENT_ID=6765b33e-06fe-4c44-801e-021256681b95
+      - MICROSOFT_CLIENT_SECRET=Oaw8Q~ad5RJEgQt2O-h7sD1YA1TqUng9oSNjSbxA
+      - MICROSOFT_AUTH_TENANT_ID=...
+      - MICROSOFT_AUTH_REDIRECT_URI=http://localhost:8080/auth/callback
+      - GMAIL_SERVICE_CLIENT_ID=450898480879-jm54463f5minitf0evll8rs78omfqf9e.apps.googleusercontent.com
+      - GMAIL_SERVICE_CLIENT_SECRET=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
+      - GMAIL_SERVICE_REDIRECT_URI=http://localhost:8080/auth/services/callback
+
+      - TEAMS_SERVICE_CLIENT_ID=28b53075-2819-4c4a-a2d2-4109b2485eb8
+      - TEAMS_SERVICE_CLIENT_SECRET=ab28Q~xz9ERcdM5efO2rz5ejx0EnGh-4S2hm2bEP
+      - TEAMS_SERVICE_TENANT_ID=901cb4ca-b862-4029-9306-e5cd0f6d9f86
+      - TEAMS_SERVICE_REDIRECT_URI=http://localhost:8080/auth/services/callback
+
+      - DROPBOX_SERVICE_CLIENT_ID=xkmcj5kt7e149cr
+      - DROPBOX_SERVICE_CLIENT_SECRET=an5rw7nzhovmd9a
+      - DROPBOX_SERVICE_REDIRECT_URI=http://localhost:8080/auth/services/callback
+
+      - GITHUB_SERVICE_CLIENT_ID=Ov23liRwqjveTsdbXa3E
+      - GITHUB_SERVICE_CLIENT_SECRET=b8300359337f544f5150893a87d56244455776cf
+      - GITHUB_SERVICE_REDIRECT_URI=http://localhost:8080/auth/services/callback
+
+      - SPOTIFY_SERVICE_CLIENT_ID=558845c7977743e4acabf7832e0457db
+      - SPOTIFY_SERVICE_CLIENT_SECRET=df121d6f78614f22ac1e03c53afab98f
+      - SPOTIFY_SERVICE_REDIRECT_URI=http://localhost:8080/auth/services/callback
+
+      - X_SERVICE_CLIENT_ID=S1JheEh6ZmZhVktpOHNXM21BQ0w6MTpjaQ
+      - X_SERVICE_CLIENT_SECRET=Vk9NH4wpqyh9ySurTDlPz9zA5sVDQYkIK99jfivvDnG9xHtrFu
+      - X_SERVICE_REDIRECT_URI=https://6002-90-91-152-27.ngrok-free.app/auth/services/callback
+
+      - DISCORD_SERVICE_CLIENT_ID=1297152435499962388
+      - DISCORD_SERVICE_CLIENT_SECRET=0tLVkOh8y6SRceZTom5apjHinlgHnhgj
+      - DISCORD_SERVICE_REDIRECT_URI=http://localhost:8080/auth/services/callback
+      - DISCORD_BOT_TOKEN=your_discord_bot_token
+
+      - BOX_SERVICE_CLIENT_ID=bsef5p845t6suou91gg1zqcdk04la0b7
+      - BOX_SERVICE_CLIENT_SECRET=BnPATuJS5M6jLfMsRfcyzKzQpHagDPL3
+      - BOX_SERVICE_REDIRECT_URI=http://localhost:8080/auth/services/callback
+
+      - MONGO_URL=mongodb://mongodb:27017/mydatabase
+      - JWT_SECRET=mysecretkey
+
+  client_web:
+    build:
+      context: ./client_web
+      dockerfile: Dockerfile
+    container_name: app_client_web
+    ports:
+      - "8081:8081"
+    environment:
+      - PORT=8081
+    volumes:
+      - ./client_web:/usr/src/app
+      - common_volume:/usr/src/app/common_volume
+    depends_on:
+      - server
+
+  mongodb:
+    image: mongo:latest
+    container_name: app_mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodata:/data/db
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=example
+
+  mongo-express:
+    image: mongo-express
+    container_name: mongo_express
+    restart: always
+    ports:
+      - "8082:8081"
+    environment:
+      - ME_CONFIG_MONGODB_ADMINUSERNAME=root
+      - ME_CONFIG_MONGODB_ADMINPASSWORD=example
+      - ME_CONFIG_MONGODB_URL=mongodb://root:example@mongodb:27017/?authSource=admin
+    depends_on:
+      - mongodb
+
+volumes:
+  mongodata: {}
+  common_volume: {}

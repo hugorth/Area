@@ -1,0 +1,176 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.register-page {
+    text-align: center;
+}
+
+.register-header {
+    background-color: #ffffff;
+    border: #3f3d56 1px solid;
+    padding: 20px;
+    display: flex;
+    margin-bottom: 40px;
+    font-family: "Anton", sans-serif;
+}
+
+.deezer-logo {
+    height: 100px;
+}
+
+.register-title {
+    font-size: 4rem;
+    color: #3f3d56;
+    font-family: 'Anton', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.partner-offers {
+    margin-bottom: 20px;
+}
+
+.partner-offers img {
+    height: 30px;
+    margin: 0 10px;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+    width: 100%;
+}
+
+.input-label-identity {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: #3f3d56;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.input-label {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: #3f3d56;
+    text-align: left;
+    padding-left: 15px;
+}
+
+.register-input,
+.register-button {
+    padding: 15px;
+    font-size: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 600px;
+}
+
+.password-input-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 630px;
+}
+
+.password-toggle-icon {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #000000;
+  }
+
+.register-button {
+    background-color: #7e3ff2;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    width: 90%;
+    max-width: 580px;
+    margin-bottom: 200px;
+}
+
+.register-button:hover {
+    background-color: #5e2db2;
+}
+
+.social-register {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 1.5rem;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.social-button {
+    background-color: #ffffff;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.social-button img {
+    width: 50%;
+    height: 50%;
+}
+
+.social-button:hover {
+    background-color: #f0f0f0;
+}
+
+.signin-link {
+    margin-top: 30px;
+    font-size: 1.2rem;
+}
+
+.signin-link a {
+    color: #7e3ff2;
+    text-decoration: none;
+}
+
+.signin-link a:hover {
+    text-decoration: underline;
+}
+
+.email-container {
+    position: relative;
+    width: 90%;
+    max-width: 600px;
+}
+
+.identity-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 640px;
+    margin-bottom: 30px;
+    margin-left: 60px;
+}

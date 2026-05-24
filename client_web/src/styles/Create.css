@@ -1,0 +1,1014 @@
+.body-create {
+  color: #333;
+  background-color: #f0f0f0;
+  font-family: 'Arial', sans-serif;
+}
+
+.app-container-create {
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding-top: 80px;
+}
+
+.back-button-create {
+  position: absolute;
+  margin-top: 110px;
+  top: 20px;
+  left: 20px;
+  background-color: #1e90ff;
+  color: white;
+  border: 2px solid white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  text-transform: none;
+}
+
+.back-button-create:hover {
+  background-color: #0056b3;
+}
+
+.back-button-create:before {
+  content: '←';
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.page-title-create {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.usage-info-create {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  color: #666;
+}
+
+.card-container-create {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  flex-wrap: wrap;
+}
+
+.card-create {
+  width: 280px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.card-create:hover {
+  transform: translateY(-5px);
+}
+
+.card-content-create {
+  text-align: center;
+}
+
+.card-title-create {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.card-description-create {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.card-button-create {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card-button-create:hover {
+  background-color: #0056b3;
+}
+*
+
+.selection-title-create {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.selection-row-create {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.selection-list-create {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.selection-item-create {
+  font-size: 16px;
+  color: #555;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.selection-item-create:last-child {
+  border-bottom: none;
+}
+
+.summary-card-create {
+  width: 600px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 30px;
+  text-align: center;
+  color: #333;
+}
+
+.summary-title-create {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.summary-card-create p {
+  font-size: 16px;
+  color: #555;
+  margin: 5px 0;
+}
+
+.selection-container-create {
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 30px;
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.selection-card-create {
+  width: 220px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+}
+
+.selection-card-create:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.service-logo-create {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.selection-description-create {
+  font-size: 14px;
+  color: #333;
+  margin: 10px 0;
+}
+
+.selection-reaction-create {
+  font-size: 16px;
+  color: #555;
+  padding: 8px 0;
+}
+
+.created-automation-card {
+  width: 100%;
+  max-width: 300px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.applet-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.applet-logos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.service-logo {
+  width: 50px;
+  height: 50px;
+}
+
+.applet-description {
+  font-size: 14px;
+  color: #333;
+  margin: 10px 0;
+}
+
+.action-button {
+  padding: 12px 18px;
+  width: 100%;
+  text-align: center;
+  border-radius: 8px;
+  background-color: #007bff;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.action-button:hover {
+  background-color: #0056b3;
+}
+
+.new-automation-card {
+  width: 100%;
+  max-width: 300px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.automation-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 220px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.automation-logos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.service-logo {
+  width: 50px;
+  height: 50px;
+}
+
+.automation-description {
+  font-size: 14px;
+  color: #333;
+  margin: 10px 0;
+}
+
+.save-button {
+  padding: 10px 20px;
+  border-radius: 8px;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.save-button:hover {
+  background-color: #0056b3;
+}
+
+.saved-automation-section {
+  margin-top: 50px;
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
+}
+
+.saved-automation-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.saved-automation-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.activation-button {
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.activation-button.activate {
+  background-color: #007bff;
+}
+
+.activation-button.deactivate {
+  background-color: red;
+}
+
+.activation-button.activate:hover {
+  background-color: #0056b3;
+}
+
+.activation-button.deactivate:hover {
+  background-color: rgb(177, 0, 0);
+}
+
+.delete-button {
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  border-radius: 8px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: darkred;
+}
+
+.create-page {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.automation-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 220px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.automation-logos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.service-logo {
+  width: 50px;
+  height: 50px;
+}
+
+.automation-description {
+  font-size: 14px;
+  color: #333;
+  margin: 10px 0;
+}
+
+.save-button {
+  padding: 10px 20px;
+  border-radius: 8px;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.save-button:hover {
+  background-color: #0056b3;
+}
+
+.saved-automation-section {
+  margin-top: 50px;
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
+}
+
+.saved-automation-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.saved-automation-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.activation-button {
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.activation-button.activate {
+  background-color: #007bff;
+}
+
+.activation-button.deactivate {
+  background-color: red;
+}
+
+.activation-button.activate:hover {
+  background-color: #0056b3;
+}
+
+.activation-button.deactivate:hover {
+  background-color: rgb(177, 0, 0);
+}
+
+.delete-button {
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  border-radius: 8px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: darkred;
+}
+
+body.dark-mode .create-page {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark-mode .automation-card {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .automation-description {
+  color: #ffffff;
+}
+
+body.dark-mode .save-button {
+  background-color: #007bff;
+  color: white;
+}
+
+body.dark-mode .save-button:hover {
+  background-color: #0056b3;
+}
+
+body.dark-mode .activation-button.activate {
+  background-color: #007bff;
+}
+
+body.dark-mode .activation-button.deactivate {
+  background-color: red;
+}
+
+body.dark-mode .activation-button.activate:hover {
+  background-color: #0056b3;
+}
+
+body.dark-mode .activation-button.deactivate:hover {
+  background-color: rgb(177, 0, 0);
+}
+
+body.dark-mode .delete-button {
+  background-color: red;
+  color: white;
+}
+
+body.dark-mode .delete-button:hover {
+  background-color: darkred;
+}
+
+body.dark-mode .body-create {
+  color: #ffffff;
+  background-color: #121212;
+}
+
+body.dark-mode .app-container-create {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark-mode .back-button-create {
+  background-color: #333;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+body.dark-mode .back-button-create:hover {
+  background-color: #555;
+}
+
+.available-actions {
+  background-color: #fff;
+  color: #333;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+body.dark-mode .available-actions {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+.choose-action-box, .choose-reaction-box {
+  background-color: #fff;
+  color: #333;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+body.dark-mode .choose-action-box, body.dark-mode .choose-reaction-box {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+.card-container-create {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card-create {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+body.dark-mode .card-create {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+.card-content-create {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.card-title-create {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card-description-create {
+  font-size: 14px;
+  color: #333;
+}
+
+body.dark-mode .card-description-create {
+  color: #ffffff;
+}
+
+.card-button-create {
+  padding: 10px 20px;
+  border-radius: 8px;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+body.dark-mode .card-button-create {
+  background-color: #0056b3;
+  color: white;
+}
+
+body.dark-mode .card-button-create:hover {
+  background-color: #003f7f;
+}
+
+.page-title-create {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+body.dark-mode .page-title-create {
+  color: #ffffff;
+}
+
+.usage-info-create {
+  font-size: 16px;
+  margin-top: 10px;
+  color: #333;
+}
+
+body.dark-mode .usage-info-create {
+  color: #ffffff;
+}
+
+.selection-container-create {
+  margin-top: 20px;
+}
+
+.selection-title-create {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+body.dark-mode .selection-title-create {
+  color: #ffffff;
+}
+
+.create-page {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.automation-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 220px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.automation-logos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.service-logo {
+  width: 50px;
+  height: 50px;
+}
+
+.automation-description {
+  font-size: 14px;
+  color: #333;
+  margin: 10px 0;
+}
+
+.save-button {
+  padding: 10px 20px;
+  border-radius: 8px;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.save-button:hover {
+  background-color: #0056b3;
+}
+
+.saved-automation-section {
+  margin-top: 50px;
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
+}
+
+.saved-automation-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.saved-automation-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.activation-button {
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.activation-button.activate {
+  background-color: #007bff;
+}
+
+.activation-button.deactivate {
+  background-color: red;
+}
+
+.activation-button.activate:hover {
+  background-color: #0056b3;
+}
+
+.activation-button.deactivate:hover {
+  background-color: rgb(177, 0, 0);
+}
+
+.delete-button {
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  border-radius: 8px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: darkred;
+}
+
+body.dark-mode .create-page {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark-mode .automation-card {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .automation-description {
+  color: #ffffff;
+}
+
+body.dark-mode .save-button {
+  background-color: #007bff;
+  color: white;
+}
+
+body.dark-mode .save-button:hover {
+  background-color: #0056b3;
+}
+
+body.dark-mode .activation-button.activate {
+  background-color: #007bff;
+}
+
+body.dark-mode .activation-button.deactivate {
+  background-color: red;
+}
+
+body.dark-mode .activation-button.activate:hover {
+  background-color: #0056b3;
+}
+
+body.dark-mode .activation-button.deactivate:hover {
+  background-color: rgb(177, 0, 0);
+}
+
+body.dark-mode .delete-button {
+  background-color: red;
+  color: white;
+}
+
+body.dark-mode .delete-button:hover {
+  background-color: darkred;
+}
+
+body.dark-mode .body-create {
+  color: #ffffff;
+  background-color: #121212;
+}
+
+body.dark-mode .app-container-create {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark-mode .back-button-create {
+  background-color: #333;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+body.dark-mode .back-button-create:hover {
+  background-color: #555;
+}
+
+.available-actions {
+  background-color: #fff;
+  color: #333;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+body.dark-mode .available-actions {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+.choose-action-box, .choose-reaction-box {
+  background-color: #fff;
+  color: #333;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+body.dark-mode .choose-action-box, body.dark-mode .choose-reaction-box {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+.card-container-create {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card-create {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+body.dark-mode .card-create {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+.card-content-create {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.card-title-create {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card-description-create {
+  font-size: 14px;
+  color: #333;
+}
+
+body.dark-mode .card-description-create {
+  color: #ffffff;
+}
+
+.card-button-create {
+  padding: 10px 20px;
+  border-radius: 8px;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+body.dark-mode .card-button-create {
+  background-color: #0056b3;
+  color: white;
+}
+
+body.dark-mode .card-button-create:hover {
+  background-color: #003f7f;
+}
+
+.page-title-create {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+body.dark-mode .page-title-create {
+  color: #ffffff;
+}
+
+.usage-info-create {
+  font-size: 16px;
+  margin-top: 10px;
+  color: #333;
+}
+
+body.dark-mode .usage-info-create {
+  color: #ffffff;
+}
+
+.selection-container-create {
+  margin-top: 20px;
+}
+
+.selection-title-create {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+body.dark-mode .selection-title-create {
+  color: #ffffff;
+}
+
+.action-list-create {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.action-item-create {
+  background-color: #fff;
+  color: #333;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+body.dark-mode .action-item-create {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .action-item-create:hover {
+  background-color: #333;
+}
